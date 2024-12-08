@@ -1,0 +1,12 @@
+﻿@model WebApplication123.Models.ErrorViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Error.</h1>
+    <p>An error occurred while processing your request.</p>
+    @if (Model?.ShowRequestId == true)
+    {
+            <p>
+                <strong>Request ID:</strong> <code>@Model.RequestId</code>
+            </p>
+    }
+</div>
